@@ -8,10 +8,12 @@ function tempConverter() {
     }
     if (unit=='Select one of below') 
         result.innerHTML = 'Please select a unit';
-    else if (unit=='celsius')
-        result.innerHTML = 'Fahrenheit: '+((temp *9/5) + 32)+'°F<br>Kelvin: '+(temp + 273.15)+'K';
         else if (unit=='fahrenheit')
-        result.innerHTML = 'Celsius: '+((temp - 32) * 5/9)+'°C<br>Kelvin: '+((temp - 32) *5/9 + 273.15)+'K';
-    else if (unit=='kelvin')
-        result.innerHTML = 'Celsius: '+(temp - 273.15)+'°C<br>Fahrenheit: '+((temp - 273.15) *9/5 + 32)+'°F';
+            result.innerHTML = 'Celsius: '+((temp - 32) * 5/9)+'°C<br>Kelvin: '+((temp - 32) *5/9 + 273.15)+'K<br>'+(temp-32)*(4/9);
+        else if (unit=='kelvin')
+            result.innerHTML = 'Celsius: '+(temp - 273.15)+'°C<br>Fahrenheit: '+((temp - 273.15) *9/5 + 32)+'°F<br>'+'Reumer: '+(temp-273.15)* (4/5)+'R';
+        else if (unit=='celsius')
+            result.innerHTML = 'Fahrenheit: '+((temp *9/5) + 32)+'°F<br>Kelvin: '+(temp + 273.15)+'K<br>'+'Reumer: '+(temp)* (4/5)+'R';
+        else if (unit=='reumer')
+            result.innerHTML = 'Fahrenheit: '+ ((temp *9/4) + 32)+'°F<br>Kelvin: '+((temp *5/4) + 273.15)+'K<br>'+'Celsius: '+(temp *5/4) + '°C';
 }
