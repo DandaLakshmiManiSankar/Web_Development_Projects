@@ -9,17 +9,17 @@
 <body>
     <div class="container">
         <div class="title">
-            <h1 style="font-family: 'sans-serif';">My Temperature Converter</h1>
+            <h1 style="font-family: 'sans-serif';">Mani's Temperature Converter</h1>
         </div>
     <br>
     Temperature Unit  : <select name="kind" id="Unit">
-        <option>Select one of the Unit</option>
+        <option>Select any of the unit</option>
         <option value="fahrenheit">Fahrenheit °F</option>
-        <option value="kelvin">Kelvin °K</option>
-	<option value="celsius">Celsius °C</option>
-
+        <option value="kelvin">Kelvin K</option>
+	    <option value="celsius">Celsius °C</option>
+        <option value="reumer">Reumer °R</option>
 </select><br><br>
-    Temperature  : <input type="text" name="temperature" id="temp" placeholder="Enter only number"><br><br>
+    Temperature  : <input type="text" name="temperature" id="temp" placeholder="Enter a valid number:"><br><br>
     <br><input type="button" value="Convert" id="convert" onclick="tempConverter()">
     <div id="result"></div>
     <script src="tempconv.js"></script>
